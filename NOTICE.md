@@ -9,3 +9,5 @@ This fork does not claim authorship of the original CRW Extension code. Changes 
 The original upstream package metadata credited the original upstream author and maintainers. This fork uses maintainer-neutral package metadata for public repository hygiene.
 
 The CRW Extension source code is licensed under the MIT License. Consumer Rights Wiki article/data references are provided by [consumerrights.wiki](https://consumerrights.wiki) under CC BY-SA 4.0, as described in the README.
+
+If there are any concerns about this fork they can be sent to rprism34@gmail.com.
