@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRW Extension Popup</title>
+    <style>
+      :root {
+        background: transparent;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body,
+      #root {
+        margin: 0;
+        width: 380px;
+        min-width: 380px;
+        height: 420px;
+        min-height: 420px;
+        background: transparent;
+        overflow: hidden;
+      }
+
+      @media (hover: none) {
+        html,
+        body {
+          width: 100%;
+          min-width: 0;
+          max-width: none;
+          height: 100%;
+          min-height: 0;
+          max-height: 100vh;
+          max-height: 100dvh;
+          background: #ffffff;
+          color: #111111;
+          color-scheme: light;
+        }
+
+        #root {
+          --crw-popup-shell-background: #004080;
+          width: 100%;
+          min-width: 0;
+          max-width: none;
+          height: 100%;
+          min-height: 0;
+          max-height: 100vh;
+          max-height: 100dvh;
+          background: #ffffff;
+          color: #ffffff;
+          color-scheme: light;
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/popup.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/index-BQt2U49s.js">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

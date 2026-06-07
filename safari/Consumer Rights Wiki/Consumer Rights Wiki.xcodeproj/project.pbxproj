@@ -1,0 +1,969 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		071441532FCF794A00F1BCFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071441522FCF794A00F1BCFC /* AppDelegate.swift */; };
+		071441552FCF794A00F1BCFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071441542FCF794A00F1BCFC /* SceneDelegate.swift */; };
+		071441582FCF794A00F1BCFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 071441562FCF794A00F1BCFC /* LaunchScreen.storyboard */; };
+		0714415B2FCF794A00F1BCFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 071441592FCF794A00F1BCFC /* Main.storyboard */; };
+		071441642FCF794A00F1BCFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071441632FCF794A00F1BCFC /* AppDelegate.swift */; };
+		071441672FCF794A00F1BCFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 071441652FCF794A00F1BCFC /* Main.storyboard */; };
+		0714416E2FCF794A00F1BCFC /* Consumer Rights Wiki Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0714416D2FCF794A00F1BCFC /* Consumer Rights Wiki Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		071441782FCF794A00F1BCFC /* Consumer Rights Wiki Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 071441772FCF794A00F1BCFC /* Consumer Rights Wiki Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		071441852FCF794A00F1BCFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071441472FCF794900F1BCFC /* ViewController.swift */; };
+		071441862FCF794A00F1BCFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071441472FCF794900F1BCFC /* ViewController.swift */; };
+		071441872FCF794A00F1BCFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071441482FCF794A00F1BCFC /* Assets.xcassets */; };
+		071441882FCF794A00F1BCFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071441482FCF794A00F1BCFC /* Assets.xcassets */; };
+		071441892FCF794A00F1BCFC /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714414A2FCF794A00F1BCFC /* SafariWebExtensionHandler.swift */; };
+		0714418A2FCF794A00F1BCFC /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714414A2FCF794A00F1BCFC /* SafariWebExtensionHandler.swift */; };
+		071441A72FCF794A00F1BCFC /* crw_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0714419C2FCF794A00F1BCFC /* crw_logo.png */; };
+		071441A82FCF794A00F1BCFC /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 0714419D2FCF794A00F1BCFC /* background.js */; };
+		071441A92FCF794A00F1BCFC /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 0714419E2FCF794A00F1BCFC /* popup.html */; };
+		071441AA2FCF794A00F1BCFC /* settings.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0714419F2FCF794A00F1BCFC /* settings.svg */; };
+		071441AB2FCF794A00F1BCFC /* close.svg in Resources */ = {isa = PBXBuildFile; fileRef = 071441A02FCF794A00F1BCFC /* close.svg */; };
+		071441AC2FCF794A00F1BCFC /* refresh.svg in Resources */ = {isa = PBXBuildFile; fileRef = 071441A12FCF794A00F1BCFC /* refresh.svg */; };
+		071441AD2FCF794A00F1BCFC /* open-in-new.svg in Resources */ = {isa = PBXBuildFile; fileRef = 071441A22FCF794A00F1BCFC /* open-in-new.svg */; };
+		071441AE2FCF794A00F1BCFC /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 071441A32FCF794A00F1BCFC /* manifest.json */; };
+		071441AF2FCF794A00F1BCFC /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = 071441A42FCF794A00F1BCFC /* options.html */; };
+		071441B02FCF794A00F1BCFC /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 071441A62FCF794A00F1BCFC /* assets */; };
+		071441B12FCF794A00F1BCFC /* crw_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0714419C2FCF794A00F1BCFC /* crw_logo.png */; };
+		071441B22FCF794A00F1BCFC /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 0714419D2FCF794A00F1BCFC /* background.js */; };
+		071441B32FCF794A00F1BCFC /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 0714419E2FCF794A00F1BCFC /* popup.html */; };
+		071441B42FCF794A00F1BCFC /* settings.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0714419F2FCF794A00F1BCFC /* settings.svg */; };
+		071441B52FCF794A00F1BCFC /* close.svg in Resources */ = {isa = PBXBuildFile; fileRef = 071441A02FCF794A00F1BCFC /* close.svg */; };
+		071441B62FCF794A00F1BCFC /* refresh.svg in Resources */ = {isa = PBXBuildFile; fileRef = 071441A12FCF794A00F1BCFC /* refresh.svg */; };
+		071441B72FCF794A00F1BCFC /* open-in-new.svg in Resources */ = {isa = PBXBuildFile; fileRef = 071441A22FCF794A00F1BCFC /* open-in-new.svg */; };
+		071441B82FCF794A00F1BCFC /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 071441A32FCF794A00F1BCFC /* manifest.json */; };
+		071441B92FCF794A00F1BCFC /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = 071441A42FCF794A00F1BCFC /* options.html */; };
+		071441BA2FCF794A00F1BCFC /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 071441A62FCF794A00F1BCFC /* assets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0714416F2FCF794A00F1BCFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0714413C2FCF794900F1BCFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0714416C2FCF794A00F1BCFC;
+			remoteInfo = "Consumer Rights Wiki Extension (iOS)";
+		};
+		071441792FCF794A00F1BCFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0714413C2FCF794900F1BCFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 071441762FCF794A00F1BCFC;
+			remoteInfo = "Consumer Rights Wiki Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		071441902FCF794A00F1BCFC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0714416E2FCF794A00F1BCFC /* Consumer Rights Wiki Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071441972FCF794A00F1BCFC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				071441782FCF794A00F1BCFC /* Consumer Rights Wiki Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		071441472FCF794900F1BCFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		071441482FCF794A00F1BCFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0714414A2FCF794A00F1BCFC /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		0714414F2FCF794A00F1BCFC /* Consumer Rights Wiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Consumer Rights Wiki.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		071441522FCF794A00F1BCFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		071441542FCF794A00F1BCFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		071441572FCF794A00F1BCFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0714415A2FCF794A00F1BCFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0714415C2FCF794A00F1BCFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071441612FCF794A00F1BCFC /* Consumer Rights Wiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Consumer Rights Wiki.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		071441632FCF794A00F1BCFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		071441662FCF794A00F1BCFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		071441682FCF794A00F1BCFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0714416D2FCF794A00F1BCFC /* Consumer Rights Wiki Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Consumer Rights Wiki Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		071441722FCF794A00F1BCFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071441772FCF794A00F1BCFC /* Consumer Rights Wiki Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Consumer Rights Wiki Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0714417C2FCF794A00F1BCFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0714419C2FCF794A00F1BCFC /* crw_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crw_logo.png; path = Resources/crw_logo.png; sourceTree = "<group>"; };
+		0714419D2FCF794A00F1BCFC /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = Resources/background.js; sourceTree = "<group>"; };
+		0714419E2FCF794A00F1BCFC /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = Resources/popup.html; sourceTree = "<group>"; };
+		0714419F2FCF794A00F1BCFC /* settings.svg */ = {isa = PBXFileReference; lastKnownFileType = text; name = settings.svg; path = Resources/settings.svg; sourceTree = "<group>"; };
+		071441A02FCF794A00F1BCFC /* close.svg */ = {isa = PBXFileReference; lastKnownFileType = text; name = close.svg; path = Resources/close.svg; sourceTree = "<group>"; };
+		071441A12FCF794A00F1BCFC /* refresh.svg */ = {isa = PBXFileReference; lastKnownFileType = text; name = refresh.svg; path = Resources/refresh.svg; sourceTree = "<group>"; };
+		071441A22FCF794A00F1BCFC /* open-in-new.svg */ = {isa = PBXFileReference; lastKnownFileType = text; name = "open-in-new.svg"; path = "Resources/open-in-new.svg"; sourceTree = "<group>"; };
+		071441A32FCF794A00F1BCFC /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		071441A42FCF794A00F1BCFC /* options.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = options.html; path = Resources/options.html; sourceTree = "<group>"; };
+		071441A62FCF794A00F1BCFC /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = Resources/assets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0714414C2FCF794A00F1BCFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0714415E2FCF794A00F1BCFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0714416A2FCF794A00F1BCFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071441742FCF794A00F1BCFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0714413B2FCF794900F1BCFC = {
+			isa = PBXGroup;
+			children = (
+				071441402FCF794900F1BCFC /* Shared (App) */,
+				071441492FCF794A00F1BCFC /* Shared (Extension) */,
+				071441512FCF794A00F1BCFC /* iOS (App) */,
+				071441622FCF794A00F1BCFC /* macOS (App) */,
+				071441712FCF794A00F1BCFC /* iOS (Extension) */,
+				0714417B2FCF794A00F1BCFC /* macOS (Extension) */,
+				071441502FCF794A00F1BCFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		071441402FCF794900F1BCFC /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				071441472FCF794900F1BCFC /* ViewController.swift */,
+				071441482FCF794A00F1BCFC /* Assets.xcassets */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		071441492FCF794A00F1BCFC /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				0714419B2FCF794A00F1BCFC /* Resources */,
+				0714414A2FCF794A00F1BCFC /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		071441502FCF794A00F1BCFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0714414F2FCF794A00F1BCFC /* Consumer Rights Wiki.app */,
+				071441612FCF794A00F1BCFC /* Consumer Rights Wiki.app */,
+				0714416D2FCF794A00F1BCFC /* Consumer Rights Wiki Extension.appex */,
+				071441772FCF794A00F1BCFC /* Consumer Rights Wiki Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		071441512FCF794A00F1BCFC /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				071441522FCF794A00F1BCFC /* AppDelegate.swift */,
+				071441542FCF794A00F1BCFC /* SceneDelegate.swift */,
+				071441562FCF794A00F1BCFC /* LaunchScreen.storyboard */,
+				071441592FCF794A00F1BCFC /* Main.storyboard */,
+				0714415C2FCF794A00F1BCFC /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		071441622FCF794A00F1BCFC /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				071441632FCF794A00F1BCFC /* AppDelegate.swift */,
+				071441652FCF794A00F1BCFC /* Main.storyboard */,
+				071441682FCF794A00F1BCFC /* Info.plist */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		071441712FCF794A00F1BCFC /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				071441722FCF794A00F1BCFC /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		0714417B2FCF794A00F1BCFC /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				0714417C2FCF794A00F1BCFC /* Info.plist */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		0714419B2FCF794A00F1BCFC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0714419C2FCF794A00F1BCFC /* crw_logo.png */,
+				0714419D2FCF794A00F1BCFC /* background.js */,
+				0714419E2FCF794A00F1BCFC /* popup.html */,
+				0714419F2FCF794A00F1BCFC /* settings.svg */,
+				071441A02FCF794A00F1BCFC /* close.svg */,
+				071441A12FCF794A00F1BCFC /* refresh.svg */,
+				071441A22FCF794A00F1BCFC /* open-in-new.svg */,
+				071441A32FCF794A00F1BCFC /* manifest.json */,
+				071441A42FCF794A00F1BCFC /* options.html */,
+				071441A62FCF794A00F1BCFC /* assets */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0714414E2FCF794A00F1BCFC /* Consumer Rights Wiki (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071441912FCF794A00F1BCFC /* Build configuration list for PBXNativeTarget "Consumer Rights Wiki (iOS)" */;
+			buildPhases = (
+				0714414B2FCF794A00F1BCFC /* Sources */,
+				0714414C2FCF794A00F1BCFC /* Frameworks */,
+				0714414D2FCF794A00F1BCFC /* Resources */,
+				071441902FCF794A00F1BCFC /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				071441702FCF794A00F1BCFC /* PBXTargetDependency */,
+			);
+			name = "Consumer Rights Wiki (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Consumer Rights Wiki (iOS)";
+			productReference = 0714414F2FCF794A00F1BCFC /* Consumer Rights Wiki.app */;
+			productType = "com.apple.product-type.application";
+		};
+		071441602FCF794A00F1BCFC /* Consumer Rights Wiki (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071441982FCF794A00F1BCFC /* Build configuration list for PBXNativeTarget "Consumer Rights Wiki (macOS)" */;
+			buildPhases = (
+				0714415D2FCF794A00F1BCFC /* Sources */,
+				0714415E2FCF794A00F1BCFC /* Frameworks */,
+				0714415F2FCF794A00F1BCFC /* Resources */,
+				071441972FCF794A00F1BCFC /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0714417A2FCF794A00F1BCFC /* PBXTargetDependency */,
+			);
+			name = "Consumer Rights Wiki (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Consumer Rights Wiki (macOS)";
+			productReference = 071441612FCF794A00F1BCFC /* Consumer Rights Wiki.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0714416C2FCF794A00F1BCFC /* Consumer Rights Wiki Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0714418D2FCF794A00F1BCFC /* Build configuration list for PBXNativeTarget "Consumer Rights Wiki Extension (iOS)" */;
+			buildPhases = (
+				071441692FCF794A00F1BCFC /* Sources */,
+				0714416A2FCF794A00F1BCFC /* Frameworks */,
+				0714416B2FCF794A00F1BCFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Consumer Rights Wiki Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Consumer Rights Wiki Extension (iOS)";
+			productReference = 0714416D2FCF794A00F1BCFC /* Consumer Rights Wiki Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		071441762FCF794A00F1BCFC /* Consumer Rights Wiki Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071441942FCF794A00F1BCFC /* Build configuration list for PBXNativeTarget "Consumer Rights Wiki Extension (macOS)" */;
+			buildPhases = (
+				071441732FCF794A00F1BCFC /* Sources */,
+				071441742FCF794A00F1BCFC /* Frameworks */,
+				071441752FCF794A00F1BCFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Consumer Rights Wiki Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Consumer Rights Wiki Extension (macOS)";
+			productReference = 071441772FCF794A00F1BCFC /* Consumer Rights Wiki Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0714413C2FCF794900F1BCFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					0714414E2FCF794A00F1BCFC = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					071441602FCF794A00F1BCFC = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					0714416C2FCF794A00F1BCFC = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					071441762FCF794A00F1BCFC = {
+						CreatedOnToolsVersion = 26.5;
+					};
+				};
+			};
+			buildConfigurationList = 0714413F2FCF794900F1BCFC /* Build configuration list for PBXProject "Consumer Rights Wiki" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0714413B2FCF794900F1BCFC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 071441502FCF794A00F1BCFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0714414E2FCF794A00F1BCFC /* Consumer Rights Wiki (iOS) */,
+				071441602FCF794A00F1BCFC /* Consumer Rights Wiki (macOS) */,
+				0714416C2FCF794A00F1BCFC /* Consumer Rights Wiki Extension (iOS) */,
+				071441762FCF794A00F1BCFC /* Consumer Rights Wiki Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0714414D2FCF794A00F1BCFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071441582FCF794A00F1BCFC /* LaunchScreen.storyboard in Resources */,
+				071441872FCF794A00F1BCFC /* Assets.xcassets in Resources */,
+				0714415B2FCF794A00F1BCFC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0714415F2FCF794A00F1BCFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071441672FCF794A00F1BCFC /* Main.storyboard in Resources */,
+				071441882FCF794A00F1BCFC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0714416B2FCF794A00F1BCFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071441B22FCF794A00F1BCFC /* background.js in Resources */,
+				071441B32FCF794A00F1BCFC /* popup.html in Resources */,
+				071441B52FCF794A00F1BCFC /* close.svg in Resources */,
+				071441B12FCF794A00F1BCFC /* crw_logo.png in Resources */,
+				071441B82FCF794A00F1BCFC /* manifest.json in Resources */,
+				071441BA2FCF794A00F1BCFC /* assets in Resources */,
+				071441B62FCF794A00F1BCFC /* refresh.svg in Resources */,
+				071441B72FCF794A00F1BCFC /* open-in-new.svg in Resources */,
+				071441B42FCF794A00F1BCFC /* settings.svg in Resources */,
+				071441B92FCF794A00F1BCFC /* options.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071441752FCF794A00F1BCFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071441A82FCF794A00F1BCFC /* background.js in Resources */,
+				071441A92FCF794A00F1BCFC /* popup.html in Resources */,
+				071441AB2FCF794A00F1BCFC /* close.svg in Resources */,
+				071441A72FCF794A00F1BCFC /* crw_logo.png in Resources */,
+				071441AE2FCF794A00F1BCFC /* manifest.json in Resources */,
+				071441B02FCF794A00F1BCFC /* assets in Resources */,
+				071441AC2FCF794A00F1BCFC /* refresh.svg in Resources */,
+				071441AD2FCF794A00F1BCFC /* open-in-new.svg in Resources */,
+				071441AA2FCF794A00F1BCFC /* settings.svg in Resources */,
+				071441AF2FCF794A00F1BCFC /* options.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0714414B2FCF794A00F1BCFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071441852FCF794A00F1BCFC /* ViewController.swift in Sources */,
+				071441532FCF794A00F1BCFC /* AppDelegate.swift in Sources */,
+				071441552FCF794A00F1BCFC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0714415D2FCF794A00F1BCFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071441862FCF794A00F1BCFC /* ViewController.swift in Sources */,
+				071441642FCF794A00F1BCFC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071441692FCF794A00F1BCFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071441892FCF794A00F1BCFC /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071441732FCF794A00F1BCFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0714418A2FCF794A00F1BCFC /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		071441702FCF794A00F1BCFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0714416C2FCF794A00F1BCFC /* Consumer Rights Wiki Extension (iOS) */;
+			targetProxy = 0714416F2FCF794A00F1BCFC /* PBXContainerItemProxy */;
+		};
+		0714417A2FCF794A00F1BCFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 071441762FCF794A00F1BCFC /* Consumer Rights Wiki Extension (macOS) */;
+			targetProxy = 071441792FCF794A00F1BCFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		071441562FCF794A00F1BCFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				071441572FCF794A00F1BCFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		071441592FCF794A00F1BCFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0714415A2FCF794A00F1BCFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		071441652FCF794A00F1BCFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				071441662FCF794A00F1BCFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0714418B2FCF794A00F1BCFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0714418C2FCF794A00F1BCFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		0714418E2FCF794A00F1BCFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Consumer Rights Wiki Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaroncooke.crw-safari-extension.Extension;
+				PRODUCT_NAME = "Consumer Rights Wiki Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0714418F2FCF794A00F1BCFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Consumer Rights Wiki Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaroncooke.crw-safari-extension.Extension;
+				PRODUCT_NAME = "Consumer Rights Wiki Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		071441922FCF794A00F1BCFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Consumer Rights Wiki";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaroncooke.crw-safari-extension;
+				PRODUCT_NAME = "Consumer Rights Wiki";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		071441932FCF794A00F1BCFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Consumer Rights Wiki";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaroncooke.crw-safari-extension;
+				PRODUCT_NAME = "Consumer Rights Wiki";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		071441952FCF794A00F1BCFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Consumer Rights Wiki Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaroncooke.crw-safari-extension.Extension;
+				PRODUCT_NAME = "Consumer Rights Wiki Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		071441962FCF794A00F1BCFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Consumer Rights Wiki Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaroncooke.crw-safari-extension.Extension;
+				PRODUCT_NAME = "Consumer Rights Wiki Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		071441992FCF794A00F1BCFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Consumer Rights Wiki";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaroncooke.crw-safari-extension;
+				PRODUCT_NAME = "Consumer Rights Wiki";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0714419A2FCF794A00F1BCFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Consumer Rights Wiki";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaroncooke.crw-safari-extension;
+				PRODUCT_NAME = "Consumer Rights Wiki";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0714413F2FCF794900F1BCFC /* Build configuration list for PBXProject "Consumer Rights Wiki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0714418B2FCF794A00F1BCFC /* Debug */,
+				0714418C2FCF794A00F1BCFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0714418D2FCF794A00F1BCFC /* Build configuration list for PBXNativeTarget "Consumer Rights Wiki Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0714418E2FCF794A00F1BCFC /* Debug */,
+				0714418F2FCF794A00F1BCFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071441912FCF794A00F1BCFC /* Build configuration list for PBXNativeTarget "Consumer Rights Wiki (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071441922FCF794A00F1BCFC /* Debug */,
+				071441932FCF794A00F1BCFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071441942FCF794A00F1BCFC /* Build configuration list for PBXNativeTarget "Consumer Rights Wiki Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071441952FCF794A00F1BCFC /* Debug */,
+				071441962FCF794A00F1BCFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071441982FCF794A00F1BCFC /* Build configuration list for PBXNativeTarget "Consumer Rights Wiki (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071441992FCF794A00F1BCFC /* Debug */,
+				0714419A2FCF794A00F1BCFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0714413C2FCF794900F1BCFC /* Project object */;
+}

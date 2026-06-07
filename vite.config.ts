@@ -1,0 +1,35 @@
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { viteStaticCopy } from "vite-plugin-static-copy";
+import { fileURLToPath } from "node:url";
+import { getManifestSrc, getOutDir } from "./viteEnv";
+
+export default defineConfig({
+  plugins: [
+    react(),
+    viteStaticCopy({
+      targets: [{ src: getManifestSrc(), dest: ".", rename: "manifest.json" }],
+    }),
+  ],
+  publicDir: "public",
+  resolve: { alias: { "@": fileURLToPath(new URL("./src", import.meta.url)) } },
+
+  build: {
+    outDir: getOutDir(),
+    emptyOutDir: false,
+    minify: true,
+    sourcemap: false,
+    rollupOptions: {
+      input: {
+        popup: "popup.html",
+        options: "options.html",
+      },
+      output: {
+        entryFileNames: (chunk) => {
+          return "assets/[name].js";
+        },
+        assetFileNames: "assets/[name][extname]",
+      },
+    },
+  },
+});
