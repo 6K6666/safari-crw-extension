@@ -230,7 +230,7 @@ TEAM_ID="APPLE_TEAM_ID" NOTARY_PROFILE="crw-notary" npm run package:release -- a
 The output is:
 
 ```text
-build/macos-dmg/Consumer Rights Wiki-1.0-2.dmg
+build/macos-dmg/Consumer Rights Wiki-1.0.3-3.dmg
 ```
 
 The DMG contains `Consumer Rights Wiki.app` and an `/Applications` symlink so users can drag the app into Applications.
@@ -340,7 +340,7 @@ npm run package:altstore
 The output is:
 
 ```text
-build/altstore/Consumer Rights Wiki-1.0-2.ipa
+build/altstore/Consumer Rights Wiki-1.0.3-3.ipa
 ```
 
 The package command does the following:
@@ -372,11 +372,11 @@ AltServer for macOS includes an `altsource` helper that can create or update sou
 
 ```shell
 /Applications/AltServer.app/Contents/MacOS/altsource new \
-  --ipa "build/altstore/Consumer Rights Wiki-1.0-2.ipa" \
+  --ipa "build/altstore/Consumer Rights Wiki-1.0.3-3.ipa" \
   --name "Consumer Rights Wiki" \
   --app-name "Consumer Rights Wiki" \
   --app-developer "Consumer Rights Wiki" \
-  --version-download-url "https://example.com/Consumer%20Rights%20Wiki-1.0-2.ipa" \
+  --version-download-url "https://example.com/Consumer%20Rights%20Wiki-1.0.3-3.ipa" \
   -o "build/altstore/apps.json"
 ```
 

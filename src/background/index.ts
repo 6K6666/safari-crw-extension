@@ -8,6 +8,7 @@ import { type AnyCRWMessage, MessageType } from "@/messaging/type";
 import { CargoEntry } from "@/shared/types";
 import { readDatasetCacheRefreshInfo, readTabMatches } from "@/shared/storage";
 import { openExtensionOptions } from "@/shared/extensionActions";
+import { getShortcutMessage } from "@/background/shortcutMessages";
 
 let datasetCache: CargoEntry[] = [];
 let datasetLoadPromise: Promise<CargoEntry[]> | null = null;
@@ -67,56 +68,17 @@ const handleShortcutCommand = async (command: string): Promise<void> => {
   const tabId = tab?.id;
   if (!tabId) return;
 
-  if (command === "hide-inline-popup") {
-    void sendMessageToTab(
-      tabId,
-      Messaging.createMessage(MessageType.HIDE_INLINE_POPUP, "background"),
-    );
-    return;
-  }
+  const message = getShortcutMessage(command, []);
+  if (!message) return;
 
-  if (
-    command !== "show-inline-popup" &&
-    command !== "toggle-site-snooze" &&
-    command !== "toggle-site-ignore"
-  ) {
+  if (message.type === MessageType.HIDE_INLINE_POPUP) {
+    void sendMessageToTab(tabId, message);
     return;
   }
 
   const matches = await readTabMatches(tabId);
-
-  switch (command) {
-    case "show-inline-popup":
-      void sendMessageToTab(
-        tabId,
-        Messaging.createMessage(
-          MessageType.FORCE_SHOW_INLINE_POPUP,
-          "background",
-          matches,
-        ),
-      );
-      break;
-    case "toggle-site-snooze":
-      void sendMessageToTab(
-        tabId,
-        Messaging.createMessage(
-          MessageType.TOGGLE_SNOOZE_CURRENT_SITE,
-          "background",
-          matches,
-        ),
-      );
-      break;
-    case "toggle-site-ignore":
-      void sendMessageToTab(
-        tabId,
-        Messaging.createMessage(
-          MessageType.TOGGLE_SUPPRESS_CURRENT_SITE,
-          "background",
-          matches,
-        ),
-      );
-      break;
-  }
+  const messageWithMatches = getShortcutMessage(command, matches);
+  if (messageWithMatches) void sendMessageToTab(tabId, messageWithMatches);
 };
 
 const relayInlinePopupMessageToActiveTab = async (

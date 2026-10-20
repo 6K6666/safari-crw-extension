@@ -100,8 +100,8 @@ TEAM_ID="APPLE_TEAM_ID" NOTARY_PROFILE="crw-notary" npm run package:release
 That command syncs the Safari extension resources once, then creates:
 
 ```text
-build/altstore/Consumer Rights Wiki-1.0-2.ipa
-build/macos-dmg/Consumer Rights Wiki-1.0-2.dmg
+build/altstore/Consumer Rights Wiki-1.0.3-3.ipa
+build/macos-dmg/Consumer Rights Wiki-1.0.3-3.dmg
 ```
 
 Run only one target when needed:
@@ -126,7 +126,7 @@ npm run package:altstore
 The output is:
 
 ```text
-build/altstore/Consumer Rights Wiki-1.0-2.ipa
+build/altstore/Consumer Rights Wiki-1.0.3-3.ipa
 ```
 
 AltStore users must keep app extensions during install. Removing the embedded extension removes Safari support.
@@ -157,14 +157,14 @@ TEAM_ID="APPLE_TEAM_ID" NOTARY_PROFILE="crw-notary" npm run package:macos-dmg
 The output is:
 
 ```text
-build/macos-dmg/Consumer Rights Wiki-1.0-2.dmg
+build/macos-dmg/Consumer Rights Wiki-1.0.3-3.dmg
 ```
 
 Verify the final DMG:
 
 ```shell
-xcrun stapler validate "build/macos-dmg/Consumer Rights Wiki-1.0-2.dmg"
-spctl --assess --type open --context context:primary-signature --verbose=4 "build/macos-dmg/Consumer Rights Wiki-1.0-2.dmg"
+xcrun stapler validate "build/macos-dmg/Consumer Rights Wiki-1.0.3-3.dmg"
+spctl --assess --type open --context context:primary-signature --verbose=4 "build/macos-dmg/Consumer Rights Wiki-1.0.3-3.dmg"
 ```
 
 The expected Gatekeeper source is:

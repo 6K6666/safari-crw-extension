@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Consumer Rights Wiki",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "author": "Consumer Rights Wiki contributors",
   "description": "Shows a popup and notifications when the current site may have an article on the Consumer Rights Wiki.",
   "action": {
