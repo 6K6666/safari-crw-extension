@@ -4,7 +4,7 @@ import * as Constants from "@/shared/constants";
 import * as Matching from "@/lib/matching/matching";
 import * as Dataset from "@/lib/dataset";
 import * as Messaging from "@/messaging";
-import { MessageType } from "@/messaging/type";
+import { type AnyCRWMessage, MessageType } from "@/messaging/type";
 import { CargoEntry } from "@/shared/types";
 import { readDatasetCacheRefreshInfo, readTabMatches } from "@/shared/storage";
 import { openExtensionOptions } from "@/shared/extensionActions";
@@ -23,26 +23,19 @@ const wait = async (ms: number): Promise<void> => {
   await new Promise((resolve) => setTimeout(resolve, ms));
 };
 
-const sendMatchUpdateToTab = async (
+const sendMessageToTab = async (
   tabId: number,
-  matches: CargoEntry[],
-  type:
-    | MessageType.MATCH_RESULTS_UPDATED
-    | MessageType.FORCE_SHOW_INLINE_POPUP
-    | MessageType.TOGGLE_INLINE_POPUP = MessageType.MATCH_RESULTS_UPDATED,
+  message: AnyCRWMessage,
   attempt = 0,
 ): Promise<boolean> => {
   try {
-    const response = await browser.tabs.sendMessage(
-      tabId,
-      Messaging.createMessage(type, "background", matches),
-    );
+    const response = await browser.tabs.sendMessage(tabId, message);
     return response === true;
   } catch {
     if (attempt >= 2) return false;
     const delayMs = 250 * (attempt + 1);
     await wait(delayMs);
-    return await sendMatchUpdateToTab(tabId, matches, type, attempt + 1);
+    return await sendMessageToTab(tabId, message, attempt + 1);
   }
 };
 
@@ -66,6 +59,66 @@ const getMessageTargetTabId = async (
   return tab?.id ?? null;
 };
 
+const handleShortcutCommand = async (command: string): Promise<void> => {
+  const [tab] = await browser.tabs.query({
+    active: true,
+    currentWindow: true,
+  });
+  const tabId = tab?.id;
+  if (!tabId) return;
+
+  if (command === "hide-inline-popup") {
+    void sendMessageToTab(
+      tabId,
+      Messaging.createMessage(MessageType.HIDE_INLINE_POPUP, "background"),
+    );
+    return;
+  }
+
+  if (
+    command !== "show-inline-popup" &&
+    command !== "toggle-site-snooze" &&
+    command !== "toggle-site-ignore"
+  ) {
+    return;
+  }
+
+  const matches = await readTabMatches(tabId);
+
+  switch (command) {
+    case "show-inline-popup":
+      void sendMessageToTab(
+        tabId,
+        Messaging.createMessage(
+          MessageType.FORCE_SHOW_INLINE_POPUP,
+          "background",
+          matches,
+        ),
+      );
+      break;
+    case "toggle-site-snooze":
+      void sendMessageToTab(
+        tabId,
+        Messaging.createMessage(
+          MessageType.TOGGLE_SNOOZE_CURRENT_SITE,
+          "background",
+          matches,
+        ),
+      );
+      break;
+    case "toggle-site-ignore":
+      void sendMessageToTab(
+        tabId,
+        Messaging.createMessage(
+          MessageType.TOGGLE_SUPPRESS_CURRENT_SITE,
+          "background",
+          matches,
+        ),
+      );
+      break;
+  }
+};
+
 const relayInlinePopupMessageToActiveTab = async (
   matches: CargoEntry[],
   sender: browser.Runtime.MessageSender,
@@ -74,7 +127,10 @@ const relayInlinePopupMessageToActiveTab = async (
   const tabId = await getMessageTargetTabId(sender);
   if (!tabId) return false;
 
-  return await sendMatchUpdateToTab(tabId, matches, type);
+  return await sendMessageToTab(
+    tabId,
+    Messaging.createMessage(type, "background", matches),
+  );
 };
 
 const loadDatasetCache = async (options?: {
@@ -155,7 +211,18 @@ browser.action.onClicked.addListener(async (tab) => {
 
   const matches = await readTabMatches(tabId);
 
-  void sendMatchUpdateToTab(tabId, matches, MessageType.TOGGLE_INLINE_POPUP);
+  void sendMessageToTab(
+    tabId,
+    Messaging.createMessage(
+      MessageType.TOGGLE_INLINE_POPUP,
+      "background",
+      matches,
+    ),
+  );
+});
+
+browser.commands?.onCommand?.addListener((command) => {
+  void handleShortcutCommand(command);
 });
 
 Messaging.createBackgroundMessageHandler({

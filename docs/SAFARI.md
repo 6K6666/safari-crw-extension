@@ -68,6 +68,10 @@ The current fork distribution app bundle identifier is `com.aaroncooke.crw-safar
    - bottom safe-area spacing is acceptable
    - options/settings fallback works
 
+## Keyboard Shortcuts
+
+Safari 26 and later shows extension commands in the menu bar. On macOS, assign shortcuts in Safari > Settings > Extensions > Consumer Rights Wiki. The commands hide or show the current tab's popup, or toggle snooze or ignore for the current domain. iPadOS shows the commands in the menu bar but does not provide shortcut editing.
+
 For Simulator runs, verify the active booted device before installing or testing:
 
 ```shell

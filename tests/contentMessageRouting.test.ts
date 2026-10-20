@@ -16,8 +16,8 @@ test("returns force-show instruction for browser-action click with zero matches"
   });
 
   assert.ok(instruction);
+  assert.equal(instruction.action, "show");
   assert.equal(instruction.ignorePreferences, true);
-  assert.equal(instruction.toggle, false);
   assert.deepEqual(instruction.matches, []);
 });
 
@@ -36,8 +36,8 @@ test("returns force-show instruction for browser-action click with matches", () 
   });
 
   assert.ok(instruction);
+  assert.equal(instruction.action, "show");
   assert.equal(instruction.ignorePreferences, true);
-  assert.equal(instruction.toggle, false);
   assert.equal(instruction.matches.length, 1);
   assert.equal(instruction.matches[0]?.PageID, "pl-wallet");
 });
@@ -57,8 +57,8 @@ test("returns toggle instruction for browser-action toggle clicks", () => {
   });
 
   assert.ok(instruction);
+  assert.equal(instruction.action, "toggle");
   assert.equal(instruction.ignorePreferences, true);
-  assert.equal(instruction.toggle, true);
   assert.equal(instruction.matches[0]?.PageID, "company-example");
 });
 
@@ -77,8 +77,8 @@ test("returns regular update instruction for match updates", () => {
   });
 
   assert.ok(instruction);
+  assert.equal(instruction.action, "show");
   assert.equal(instruction.ignorePreferences, false);
-  assert.equal(instruction.toggle, false);
   assert.equal(instruction.matches[0]?.PageID, "company-7eleven");
 });
 
